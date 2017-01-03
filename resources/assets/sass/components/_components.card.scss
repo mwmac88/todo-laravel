@@ -1,0 +1,32 @@
+.c-card {
+  width: 100%;
+  max-width: 330px;
+  margin-bottom: 40px;
+
+  @include mq($from: laptop) {
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__actions {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+  }
+
+  &__add, &__edit {
+    background: $card-background-color-add;
+    padding: 10px 20px;
+  }
+
+  &--completed {
+    background: $card-background-color-completed;
+  }
+  &--hidden {
+    display: none;
+  }
+}

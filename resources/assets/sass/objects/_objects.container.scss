@@ -1,0 +1,13 @@
+.o-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include mq($from: tablet) {
+    justify-content: space-around;
+  }
+
+  @include mq($from: wide) {
+    justify-content: flex-start;
+  }
+}

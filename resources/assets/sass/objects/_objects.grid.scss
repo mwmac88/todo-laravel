@@ -1,0 +1,19 @@
+.o-grid {
+  display: flex;
+  padding: 0 15px;
+  max-width: 600px;
+  margin: 30px auto;
+
+  @include mq($from: tablet) {
+    padding: 0;
+    max-width: 750px;
+  }
+
+  @include mq($from: wide) {
+    max-width: 1080px;
+  }
+
+  @include mq($from: hd) {
+    max-width: 1600px;
+  }
+}

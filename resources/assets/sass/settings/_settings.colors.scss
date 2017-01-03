@@ -1,0 +1,7 @@
+$color-primary: $palette-blue-400;
+$color-primary-dark: $palette-blue-800;
+$color-accent: $palette-blue-A200;
+
+$card-background-color: unquote("rgba(#{$palette-yellow-200}, 0.7)") !default;
+$card-background-color-completed: unquote("rgba(#{$palette-grey-100}, 0.7)") !default;
+$card-background-color-add: unquote("rgba(#{$palette-light-blue-50}, 0.7)") !default;
