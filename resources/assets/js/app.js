@@ -17,13 +17,14 @@ require('material-design-lite/src/ripple/ripple.js');
 
 $( document ).ready(function() {
     // Submit update form on checkbox change
-    $('.c-card .form__check :checkbox').change( function () {
+    $('.c-card .c-form__check :checkbox').change( function () {
         $(this).parents('form').submit();
     });
 
-    $('.c-btn__edit').on('click', function () {
-        console.log('CLICKED!');
-       $(this).parent('.c-card').addClass('c-card--hidden');
+    // Edit button click function
+    // Hides view card & shows edit card
+    $('.c-btn__edit, .c-btn__done').on('click', function () {
+       $(this).closest('.o-container__cards').toggleClass('o-container__cards--flipped');
     });
 
     // Function to remove page message (Updated)

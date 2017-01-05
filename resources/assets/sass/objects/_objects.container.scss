@@ -3,11 +3,31 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @include mq($from: tablet) {
+  @include mq($from: tablet-portrait) {
     justify-content: space-around;
   }
 
   @include mq($from: wide) {
     justify-content: flex-start;
+  }
+
+  &__cards {
+    position: relative;
+    min-width: 280px;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    min-height: 310px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+    margin-bottom: 15px;
+    
+    @include mq($from: tablet-portrait) {
+      min-width: 310px;
+      margin: 20px;
+    }
+  }
+  &__cards--flipped {
+    transform: rotateY( 180deg );
   }
 }

@@ -1,9 +1,11 @@
 .c-card {
+  position: absolute;
+  transition: transform 0.4s;
+  backface-visibility: hidden;
   width: 100%;
-  max-width: 330px;
-  margin-bottom: 40px;
+  height: 100%;
 
-  @include mq($from: laptop) {
+  @include mq($from: tablet-landscape) {
     margin-right: 20px;
   }
 
@@ -13,7 +15,7 @@
 
   &__actions {
     display: flex;
-    position: absolute;
+    position: relative;
     bottom: 0;
     justify-content: space-between;
   }
@@ -23,10 +25,20 @@
     padding: 10px 20px;
   }
 
+  &__edit {
+    transform: rotateY( 180deg );
+    .actions {
+      display: flex;
+      position: relative;
+      bottom: 0;
+      .c-btn__done {
+        align-self: center;
+      }
+    }
+  }
+
+
   &--completed {
     background: $card-background-color-completed;
-  }
-  &--hidden {
-    display: none;
   }
 }
