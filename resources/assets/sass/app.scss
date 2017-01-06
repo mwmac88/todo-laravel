@@ -18,9 +18,11 @@
  * CONTENTS
  *
  * SETTINGS
+ * Colors...............Custom theme colours and changes to MDL defaults.
  * Config...............Project-level configuration and feature switches.
  * Core.................inuitcss’ core and setup settings.
  * Global...............Project-wide variables and settings.
+ *                      MQ Breakpoints defined in here
  *
  * TOOLS
  * Rem..................Tools for converting pixel inputs into their rem
@@ -42,8 +44,7 @@
  *                      `line-height`.
  * Headings.............Very minimal (i.e. only font-size information) for
  *                      headings 1 through 6.
- * Images...............Base image styles.
- * Tables...............Simple table styles.
+
  *
  * OBJECTS
  * Wrapper..............Page constraint object.
@@ -57,15 +58,20 @@
  * Block................Image-on-top-of-text object.
  * Ratio................A container for maintaining aspect ratio of content.
  * Crop.................Provide a cropping context for media (images, etc.).
+ *
  * Tables...............Classes for manipulating `table`s.
  * Pack.................Pack items into available horizontal space.
+ * Container............Container flexbox styles to wrap cards and define
+                        content flow (centered, start)
+ * Grid.................Flexbox grid styling with max-width breakpoints
  *
  * VENDORS
  * Mdl..................Google's Material Design Lite Framework
  *
  * COMPONENTS
- * Buttons..............An example button component, and how it fits into the
- *                      inuitcss framework.
+ * Card.................mdl-card custom styling
+ * Forms................Custom styling of forms within mdl-cards
+ * Snackbar.............Custom Popup mdl-snackbar styling (form errors)
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -91,7 +97,6 @@
 @import "../../../node_modules/inuitcss/tools/tools.font-size";
 @import "../../../node_modules/inuitcss/tools/tools.clearfix";
 @import "../../../node_modules/sass-mq/mq";
-//@import "tools/tools.aliases";
 
 // GENERIC
 @import "../../../node_modules/inuitcss/generic/generic.box-sizing";
@@ -99,10 +104,8 @@
 @import "../../../node_modules/inuitcss/generic/generic.shared";
 
 // ELEMENTS
-@import "../../../node_modules/inuitcss/elements/elements.page";
+@import "elements/elements.page";
 @import "../../../node_modules/inuitcss/elements/elements.headings";
-//@import "elements/elements.links";
-//@import "elements/elements.quotes";
 
 // OBJECTS
 @import "../../../node_modules/inuitcss/objects/objects.layout";
@@ -117,15 +120,14 @@
 @import "objects/objects.container";
 
 // VENDORS
-//@import "../../../node_modules/material-design-lite/src/material-design-lite.scss";
+// Custom import of MDL config taken from:
+// @import "../../../node_modules/material-design-lite/src/material-design-lite.scss";
 @import "vendors/vendors.mdl-config";
 
 // COMPONENTS
-@import "components/components.buttons";
 @import "components/components.card";
 @import "components/components.forms";
+@import "components/components.snackbar";
 
 // UTILITIES
-@import "../../../node_modules/inuitcss/utilities/utilities.widths";
-@import "../../../node_modules/inuitcss/utilities/utilities.headings";
-@import "../../../node_modules/inuitcss/utilities/utilities.spacing";
+

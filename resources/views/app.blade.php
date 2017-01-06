@@ -30,14 +30,14 @@
 
         <main class="mdl-layout__content">
             @if (Session::has('message'))
-                <div id="pageMessage" class="mdl-js-snackbar mdl-snackbar mdl-snackbar--active">
+                <div id="pageMessage" class="mdl-js-snackbar mdl-snackbar mdl-snackbar--active c-snackbar c-snackbar__updates">
                     <div class="mdl-snackbar__text">
                         {{ Session::get('message') }}
                     </div>
                 </div>
             @endif
             @if ($errors->any())
-                <div id="pageErrors" class="mdl-js-snackbar mdl-snackbar mdl-snackbar--active">
+                <div id="pageErrors" class="mdl-js-snackbar mdl-snackbar mdl-snackbar--active c-snackbar c-snackbar__errors">
                     <div class="mdl-snackbar__text">
                         @foreach ( $errors->all() as $error )
                             <p>{{ $error }}</p>

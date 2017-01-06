@@ -11,10 +11,10 @@
     {!! Form::close() !!}
 
     <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">{{ $task->name }}</h2>
+        <h2 class="mdl-card__title-text title">{{ $task->name }}</h2>
     </div>
-    <div class="mdl-card__supporting-text mdl-card--expand">
-        {{ str_limit($task->description, 150) }}
+    <div class="c-card__textbox mdl-card__supporting-text mdl-card--expand">
+        {{ $task->description }}
     </div>
     <div class="c-card__actions mdl-card__actions mdl-card--border">
         <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect c-btn c-btn__edit" id={{ 'edit'.$task->id }}>
