@@ -5,7 +5,7 @@ TODO APP - Laravel
 ### What is this repository for? ###
 
 * My ToDO Application built with Laravel
-* Version: 1.0.0
+* Version: 1.1.0
 
 ### Pre-requisites ###
 
@@ -43,12 +43,12 @@ Run gulp to compile sass and js:
 gulp
 ```
 
-### ToDo V 1.* ###
+### ToDo V 1.2 ###
 
 * Fix mdl-button tooltip hovers
 * Add delete confirmation modal
-* Change completed/incomplete to custom checkbox
+* Change card completed/incomplete to custom checkbox
+* Add sort-by date or completed
 
 ### ToDo V 2.* ###
 * Add categories & colour coding
-* Add filter by completed & categories

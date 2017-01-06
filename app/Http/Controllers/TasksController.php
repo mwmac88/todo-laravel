@@ -20,6 +20,14 @@ class TasksController extends Controller
   public function index()
   {
     $tasks = Task::orderBy('created_at', 'desc')->get();
+
+    $filter = Input::get('taskscompleted');
+
+      if ($filter !== null)
+      {
+          $tasks = Task::where('completed', '=', $filter)->get();
+      }
+
     return view('tasks.index', [
         'tasks' => $tasks
     ]);
@@ -55,7 +63,7 @@ class TasksController extends Controller
 
   public function update(Task $task, Request $request)
   {
-//    $this->validate($request, $this->rules);
+    // $this->validate($request, $this->rules);
     // $input['task_id'] = $task->id;
 
   	$input = array_except(Input::all(), '_method');
