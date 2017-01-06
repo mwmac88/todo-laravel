@@ -2,8 +2,10 @@
   // Stack view & edit cards on top for flip
   position: absolute;
   transition: transform 0.4s;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  // Important to hide card behind *safari fix*
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   width: 100%;
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;

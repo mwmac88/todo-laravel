@@ -22,6 +22,8 @@
     transform-style: preserve-3d;
     transition: transform 0.4s;
     margin-bottom: 25px;
+    // Important to hide card behind *firefox fix*
+    -moz-backface-visibility: hidden;
 
     // Grow until tablet-portrait
     @include mq($until: tablet-portrait) {
