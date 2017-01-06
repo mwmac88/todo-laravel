@@ -52,3 +52,4 @@ gulp
 
 ### ToDo V 2.* ###
 * Add categories & colour coding
+* Add users (login, logout, users->tasks)
