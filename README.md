@@ -5,7 +5,7 @@ TODO APP - Laravel
 ### What is this repository for? ###
 
 * My ToDO Application built with Laravel
-* Version: 1.1.0
+* Version: 1.1.2
 
 ### Pre-requisites ###
 
