@@ -6,12 +6,14 @@
   backface-visibility: hidden;
   width: 100%;
   height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
 
   a {
     text-decoration: none;
   }
   .title {
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: 400;
   }
 
   &__text {
@@ -51,6 +53,10 @@
     }
     .c-btn__done {
       align-self: center;
+    }
+    .quickadd__name, .quickadd__desc {
+      font-weight: 600;
+      font-family: inherit;
     }
   }
 

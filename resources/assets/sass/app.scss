@@ -89,6 +89,7 @@
 @import "../../../node_modules/material-design-lite/src/color-definitions";
 @import "settings/settings.colors";
 @import "settings/settings.config";
+@import "settings/settings.fonts";
 @import "../../../node_modules/inuitcss/settings/settings.core";
 @import "settings/settings.global";
 
@@ -104,7 +105,7 @@
 @import "../../../node_modules/inuitcss/generic/generic.shared";
 
 // ELEMENTS
-@import "elements/elements.page";
+@import "../../../node_modules/inuitcss/elements/elements.page";
 @import "../../../node_modules/inuitcss/elements/elements.headings";
 
 // OBJECTS
