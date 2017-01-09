@@ -46,7 +46,8 @@ gulp
 
 ### CHANGELOG ###
 
-V 1.1.1 -
+* V 1.1.2 - Minor fix to card (Safari)
+* V 1.1.1 - Minor fix to card (Firefox)
 * V 1.1 - Added sorting links and controller functionality (index)
 
 ### ToDo V 1.2 ###
