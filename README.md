@@ -48,8 +48,9 @@ gulp
 * Fix mdl-button tooltip hovers
 * Add delete confirmation modal
 * Change card completed/incomplete to custom checkbox
-* Add sort-by date or completed
+* Add sort-by: Complete/Date
+* 
 
 ### ToDo V 2.* ###
 * Add categories & colour coding
-* Add users (login, logout, users->tasks)
+* Add user management (login, logout, users->tasks)
