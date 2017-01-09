@@ -43,13 +43,19 @@ Run gulp to compile sass and js:
 gulp
 ```
 
+
+### CHANGELOG ###
+
+V 1.1.1 -
+* V 1.1 - Added sorting links and controller functionality (index)
+
 ### ToDo V 1.2 ###
 
 * Fix mdl-button tooltip hovers
 * Add delete confirmation modal
 * Change card completed/incomplete to custom checkbox
 * Add sort-by: Complete/Date
-* 
+* Remove unnecessary blade template files
 
 ### ToDo V 2.* ###
 * Add categories & colour coding
