@@ -94,9 +94,9 @@
 @import "settings/settings.global";
 
 // TOOLS
-@import "../../../node_modules/inuitcss/tools/tools.rem";
 @import "../../../node_modules/inuitcss/tools/tools.font-size";
 @import "../../../node_modules/inuitcss/tools/tools.clearfix";
+@import "../../../node_modules/inuitcss/tools/tools.hidden";
 @import "../../../node_modules/sass-mq/mq";
 
 // GENERIC
@@ -116,7 +116,6 @@
 @import "../../../node_modules/inuitcss/objects/objects.list-inline";
 @import "../../../node_modules/inuitcss/objects/objects.box";
 @import "../../../node_modules/inuitcss/objects/objects.block";
-@import "../../../node_modules/inuitcss/objects/objects.tables";
 @import "objects/objects.grid";
 @import "objects/objects.container";
 

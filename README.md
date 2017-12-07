@@ -17,8 +17,31 @@ npm install gulp -g
 ```
 
 ### How do I get set up? ###
+### Pre-requisites ###
+
+* MySQL database setup
+* Creation of .env file in project root with following config added:
+```
+DB_CONNECTION=mysql
+DB_HOST={HOST HERE}
+DB_PORT={PORT HERE}
+DB_DATABASE={DB NAME HERE}
+DB_USERNAME={USERNAME HERE}
+DB_PASSWORD={PASSWORD HERE}
+```
 
 * Laravel
+
+Ensure APP_URL is set to server url or local in .env and contains a key, if no key:
+.env key generate:
+```
+php artisan key:generate
+```
+
+Dependencies:
+```
+composer update --no-scripts
+```
 
 Database table creation:
 ```
@@ -46,6 +69,10 @@ gulp
 
 ### CHANGELOG ###
 
+* V 1.1.6 - Added additional documentation to readme
+* V 1.1.5 - Fix to check isset on tasks index
+* V 1.1.4 - Updated inuitcss
+* V 1.1.3 - Added index route redirect to /tasks
 * V 1.1.2 - Minor fix to card (Safari)
 * V 1.1.1 - Minor fix to card (Firefox)
 * V 1.1 - Added sorting links and controller functionality (index)

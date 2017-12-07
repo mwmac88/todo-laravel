@@ -6,7 +6,7 @@
 
 <div class="tasks__list">
 
-  @if ( !$tasks )
+    @if ( !isset($tasks) )
         <div class="o-grid">
             <div class="o-container">
                 <div class="o-container__cards">
@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-  @else
+    @else
         <div class="o-grid">
             <div class="o-container">
                 <div class="o-container__cards">
@@ -36,7 +36,7 @@
             @endforeach
             </div>
         </div>
-      @endif
+    @endif
 
 </div>
 

@@ -18,7 +18,7 @@ Route::resource('tasks', 'TasksController');
 Route::delete('/tasks/{task}', 'TaskController@destroy');
 
 Route::get('/', function () {
-  return view('tasks.index');
+  return redirect('tasks');
 });
 
 Route::bind('tasks', function($value, $route) {
